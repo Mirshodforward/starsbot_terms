@@ -74,47 +74,104 @@
 
     <script>
         const terms = {
-            uz: `
-                <h2>1. Umumiy qoidalar</h2>
-                <p>Ushbu bot orqali xizmatlardan foydalangan holda, foydalanuvchi ushbu shartlarga rozilik bildiradi.</p>
-                <h2>2. Xizmatlar va To‘lovlar</h2>
-                <p>Bot orqali yulduzlar va boshqa xizmatlar pullik asosda taqdim etiladi. To‘lovlar qaytarilmaydi.</p>
-                <h2>3. Shaxsiy Ma'lumotlar</h2>
-                <p>Shaxsiy ma'lumotlar himoyalangan va uchinchi tomonlarga berilmaydi.</p>
-                <h2>4. Javobgarlik</h2>
-                <p>Xizmatdagi texnik xatoliklar uchun bot ma'muriyati javobgar emas.</p>
+    uz: `
+        <h2>📄 1. Umumiy qoidalar</h2>
+        <p>1.1. Ushbu bot orqali xizmatlardan foydalangan holda, foydalanuvchi ushbu shartlarga rozilik bildiradi.</p>
+        <p>1.2. Xizmatlar O‘zbekiston Respublikasining amaldagi qonunchiligiga muvofiq ko‘rsatiladi.</p>
 
-                <h2>1. Umumiy qoidalar</h2>
-                <p>Ushbu bot orqali xizmatlardan foydalangan holda, foydalanuvchi ushbu shartlarga rozilik bildiradi.</p>
-                <h2>2. Xizmatlar va To‘lovlar</h2>
-                <p>Bot orqali yulduzlar va boshqa xizmatlar pullik asosda taqdim etiladi. To‘lovlar qaytarilmaydi.</p>
-                <h2>3. Shaxsiy Ma'lumotlar</h2>
-                <p>Shaxsiy ma'lumotlar himoyalangan va uchinchi tomonlarga berilmaydi.</p>
-                <h2>4. Javobgarlik</h2>
-                <p>Xizmatdagi texnik xatoliklar uchun bot ma'muriyati javobgar emas.</p>
-                
-            `,
-            ru: `
-                <h2>1. Общие положения</h2>
-                <p>Пользуясь ботом, пользователь соглашается с условиями использования.</p>
-                <h2>2. Услуги и Оплата</h2>
-                <p>Покупка звезд и других услуг является платной. Оплата возврату не подлежит.</p>
-                <h2>3. Личные Данные</h2>
-                <p>Личные данные защищены и не передаются третьим лицам.</p>
-                <h2>4. Ответственность</h2>
-                <p>Администрация бота не несет ответственности за технические сбои.</p>
-            `,
-            en: `
-                <h2>1. General Terms</h2>
-                <p>By using this bot, the user agrees to these terms of service.</p>
-                <h2>2. Services and Payments</h2>
-                <p>Purchasing stars and other services is paid. Payments are non-refundable.</p>
-                <h2>3. Personal Data</h2>
-                <p>Personal data is protected and not shared with third parties.</p>
-                <h2>4. Responsibility</h2>
-                <p>The bot administration is not responsible for technical failures.</p>
-            `
-        };
+        <h2>💳 2. Xizmatlar va To‘lovlar</h2>
+        <p>2.1. Bot orqali yulduzlar (stars) va boshqa xizmatlar pullik asosda taqdim etiladi.</p>
+        <p>2.2. To‘lovlar real vaqtda, foydalanuvchi tomonidan ko‘rsatilgan miqdorda amalga oshiriladi.</p>
+        <p>2.3. To‘lov amalga oshirilgandan so‘ng xizmat avtomatik tarzda taqdim etiladi va qaytarilmaydi.</p>
+
+        <h2>🔄 3. Qaytarib berish siyosati</h2>
+        <p>3.1. Xizmatlar xarakteri sababli to‘lovlar qaytarilmaydi.</p>
+        <p>3.2. Agar texnik nosozlik sababli xizmat ko‘rsatilmasa, foydalanuvchi yordam xizmatiga murojaat qilishi mumkin.</p>
+
+        <h2>👤 4. Foydalanuvchi Majburiyatlari</h2>
+        <p>4.1. Foydalanuvchi xizmatlardan faqat qonuniy maqsadlarda foydalanishi shart.</p>
+        <p>4.2. Foydalanuvchi o‘z login ma'lumotlari va harakatlari uchun shaxsan javobgar.</p>
+
+        <h2>⚙️ 5. Xizmatdagi O‘zgarishlar</h2>
+        <p>5.1. Bot egasi istalgan vaqtda xizmatlar, narxlar va foydalanuvchi shartlarini o‘zgartirish huquqiga ega.</p>
+        <p>5.2. O‘zgarishlar foydalanuvchiga xabar berilmasdan kuchga kiradi.</p>
+
+        <h2>🛡 6. Javobgarlikni cheklash</h2>
+        <p>6.1. Bot texnik nosozliklar, uchinchi tomon xatolari yoki internet uzilishlari sababli zarar uchun javobgar emas.</p>
+
+        <h2>🔒 7. Shaxsiy Ma’lumotlar</h2>
+        <p>7.1. Foydalanuvchilarning shaxsiy ma’lumotlari faqat xizmat ko‘rsatish maqsadida saqlanadi va uchinchi tomonlarga bermaydi.</p>
+
+        <h2>⚖️ 8. Qonunchilik va nizolarni hal qilish</h2>
+        <p>8.1. Ushbu shartlar O‘zbekiston Respublikasi qonunchiligiga muvofiq tartibga solinadi.</p>
+        <p>8.2. Har qanday nizo kelib chiqqan taqdirda, tomonlar uni muzokara va kelishuv yo‘li bilan hal qilishga harakat qiladi.</p>
+    `,
+    ru: `
+        <h2>📄 1. Общие положения</h2>
+        <p>1.1. Пользуясь ботом, пользователь соглашается с данными условиями.</p>
+        <p>1.2. Услуги предоставляются в соответствии с законодательством Республики Узбекистан.</p>
+
+        <h2>💳 2. Услуги и Оплата</h2>
+        <p>2.1. Покупка звезд (stars) и других услуг осуществляется на платной основе.</p>
+        <p>2.2. Платежи совершаются в реальном времени в указанном пользователем размере.</p>
+        <p>2.3. После оплаты услуга предоставляется автоматически и не подлежит возврату.</p>
+
+        <h2>🔄 3. Политика возврата</h2>
+        <p>3.1. Из-за характера услуг возврат платежей невозможен.</p>
+        <p>3.2. В случае технических сбоев пользователь может обратиться в службу поддержки.</p>
+
+        <h2>👤 4. Обязанности Пользователя</h2>
+        <p>4.1. Пользователь обязан использовать услуги только в законных целях.</p>
+        <p>4.2. Пользователь несет личную ответственность за свои учетные данные и действия.</p>
+
+        <h2>⚙️ 5. Изменения в Услугах</h2>
+        <p>5.1. Администрация бота вправе в любое время изменять услуги, цены и условия использования.</p>
+        <p>5.2. Изменения вступают в силу без предварительного уведомления пользователя.</p>
+
+        <h2>🛡 6. Ограничение Ответственности</h2>
+        <p>6.1. Администрация бота не несет ответственности за убытки, вызванные техническими сбоями или перебоями в интернете.</p>
+
+        <h2>🔒 7. Персональные Данные</h2>
+        <p>7.1. Персональные данные пользователей используются только для предоставления услуг и не передаются третьим лицам.</p>
+
+        <h2>⚖️ 8. Законодательство и Разрешение Споров</h2>
+        <p>8.1. Настоящие условия регулируются законодательством Республики Узбекистан.</p>
+        <p>8.2. Все споры стороны стремятся разрешить путем переговоров и мирного соглашения.</p>
+    `,
+    en: `
+        <h2>📄 1. General Terms</h2>
+        <p>1.1. By using this bot, the user agrees to these terms and conditions.</p>
+        <p>1.2. Services are provided in accordance with the laws of the Republic of Uzbekistan.</p>
+
+        <h2>💳 2. Services and Payment</h2>
+        <p>2.1. Purchasing stars and other services is paid and voluntary.</p>
+        <p>2.2. Payments are made in real-time and in the amount specified by the user.</p>
+        <p>2.3. After payment, the service is provided automatically and is non-refundable.</p>
+
+        <h2>🔄 3. Refund Policy</h2>
+        <p>3.1. Due to the nature of services, payments are non-refundable.</p>
+        <p>3.2. In case of technical failure, the user may contact the support service for assistance.</p>
+
+        <h2>👤 4. User Obligations</h2>
+        <p>4.1. Users must use the services for legal purposes only.</p>
+        <p>4.2. Users are personally responsible for their login credentials and actions.</p>
+
+        <h2>⚙️ 5. Changes to Services</h2>
+        <p>5.1. The bot administration reserves the right to change services, prices, and terms at any time.</p>
+        <p>5.2. Changes take effect without prior notice to the user.</p>
+
+        <h2>🛡 6. Limitation of Liability</h2>
+        <p>6.1. The bot administration is not responsible for damages caused by technical failures or internet interruptions.</p>
+
+        <h2>🔒 7. Personal Data</h2>
+        <p>7.1. Users' personal data is stored only for service provision purposes and is not shared with third parties.</p>
+
+        <h2>⚖️ 8. Governing Law and Dispute Resolution</h2>
+        <p>8.1. These terms are governed by the laws of the Republic of Uzbekistan.</p>
+        <p>8.2. Any disputes will be attempted to be resolved amicably through negotiations.</p>
+    `
+};
+
 
         function showLanguage(lang) {
             document.getElementById('terms-content').innerHTML = terms[lang];
